@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+</head>
+	<style> 
+		  .body 
+		{
+			margin:100;
+			background-image: url("BMW-electric-scooter-7.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.header
+		{
+			color: burlywood;
+			font-size: 50px;
+			margin-top: 10%;
+			font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+			text-align: center;
+			text-decoration: inherit;
+			text-decoration-color: floralwhite;
+		}
+		table, th, td
+		{
+			border: 4px solid #983BA9;
+			text-align: center;
+			font-size: 30px;
+			font-style: oblique;
+			color: aqua;
+		}
+		.butto
+		{
+			margin-left: 710px;
+			margin-top: 30px;
+			font-size: 30px;
+			
+		}
+	</style>
+<body class="body">	
+<h1 class="header">Login Here</h1>
+<form name="login" method="post" action="#">
+	<table style="width: 30%"  height="20%" align="center">
+	<tr>
+	<th bordercolor="#ED9899">Username</th>
+	<th><input type="text" id="username" name="username" style="margin-bottom:10px" required></th>
+		
+	</tr>
+	<tr>
+	<th bordercolor="#ED9899">Password</th>
+	<th><input type="password" id="password" name="password" style="margin-bottom:10px" required></th>
+	</tr>
+	</table>
+	
+<input type="button" class="butto" onClick="check(this.form)" value="Submit">	
+</form>
+<script type="text/javascript">
+function check(form)
+	{
+		//var user=document.getElementById("username");
+		//var pass=document.getElementById("password");
+	
+	if (form.username.value=='sabi' && form.password.value=='sabi1')
+		{
+			window.open('Admin.html')
+		}
+	else
+		{		
+			alert("Please fill the Username and Password correctly")
+		}
+	}
+</script>
+</body>
+</html>
